@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Navbar from './sections/navbar/navbar';
+import Navibar from './sections/navbar/navbar';
 import Hero from './sections/hero/hero';
 import About from './sections/about/about';
 import Footer from './sections/footer/footer';
@@ -10,7 +10,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
+                <Navibar/>
                 <Hero/>
                 <About/>
                 <Contact/>
