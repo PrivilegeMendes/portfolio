@@ -1,0 +1,16 @@
+.projects {
+	color: white;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/* bg:"dark"; */
+}
+
+.projects__heading {
+	color: white;
+	text-align: center;
+}
+
+.projects_text {
+	color: white;
+}

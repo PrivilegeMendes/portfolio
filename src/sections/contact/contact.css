@@ -1,0 +1,24 @@
+.contact {
+	/* background-color: #343a40; */
+	background-image: linear-gradient(
+			rgba(139, 121, 121, 0.726),
+			rgba(57, 44, 240, 0.5)
+		),
+		url("./../../assets/background.jpg");
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	align-items: center;
+	text-align: center;
+	min-height: 500px;
+}
+
+.contact_text {
+	font-weight: 400;
+	text-align: center;
+	color: white;
+}

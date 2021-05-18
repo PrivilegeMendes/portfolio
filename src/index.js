@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 import 'react-reveal';
+import 'react-router-dom';
 import 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
