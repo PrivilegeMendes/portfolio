@@ -11,7 +11,7 @@ const Hero = () => {
             <Container className= 'hero_text'>
                 <h1>I'm Privilege</h1>
                 <p>
-                    I am an Embedded Hardware Designer Developer
+                    I am an Electronic Engineer and aspiring Founder
                 </p>
                 <Button variant = 'primary'> Know more</Button>
             </Container>

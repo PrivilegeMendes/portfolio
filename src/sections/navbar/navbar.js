@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Navibar = () => {
     return (
-        <Navbar bg="dark" variant="dark" sticky="top">
+        <Navbar bg="dark" variant="dark" sticky="top" expand='sm'>
             <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
             <Nav className="ml-auto">
                 <Nav.Link href="#about" to="/about">About</Nav.Link>

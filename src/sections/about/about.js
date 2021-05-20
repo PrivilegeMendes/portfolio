@@ -1,52 +1,81 @@
 import React from 'react';
 import profile from './../../assets/profile.jpg';
+import working from './../../assets/working.jpg';
 import { Card, Button } from 'react-bootstrap';
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import './about.css';
 
 const About = () => {
     return (
-        // <article className="vh-100 dt w-100" style={{ backgroundImage: `url("http://mrmrs.github.io/photos/u/011.jpg")`, height: 800, weight: 800 }}>
-        //     <div className="dtc v-mid tc bg-black-80 ph3 ph4-l">
-        //         <h2 className="center fw1 f1 white-70 mt4 mb4 tc">About</h2>
-        //         <div className="cf">
-        //             <div className="fl w-40 tc">
-        //                 <div className="about-wrapper__imag ">
-        //                     <img
-        //                         className="img-fluid rounded shadow-lg br3"
-        //                         height="auto"
-        //                         width="250px"
-        //                         src={profile}
-        //                         alt="Profile"
-        //                     />
-        //                 </div>
-        //                 <div className="ph4">
-        //                     <a className="f6 no-underline grow dib bg-blue white ba b--blue ph3 pv2 mb3" href="/">See Resume</a>
-        //                 </div>
-        //             </div>
-        //             <div className="fl w-50 ">
-        //                 <p className="white-80">
-        //                     Privilege Mendes is a multi-skilled professional, Hardware Developer, Embedded Developer, Web Developer and aspiring Product Manager living in Centurion, South Africa.
-        //                      </p>
-        //                 <p className="white-80">
-        //                     Privilege graduate from the University of Pretoria, where he studied Electronic Engineering. During his scholarship vacation work, he was indentified by a Principal Developer with great potential. Under his wing, he learned the tools of the trade of Engineering, not as an occupation, but a tool to change the world.
-        //                     </p>
-        //             </div>
-        //         </div>
-        //         <a className="f4 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/">Projects</a>
-        //     </div>
-        // </article>
-        <Card >
+        <Card className="about bg-dark text-white" variant="dark">
             <Card.Body>
-                <Card.Title>About Me</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                <Card.Text>
-                    Privilege Mendes is a multi-skilled professional, Hardware Developer, Embedded Developer, Web Developer and aspiring Product Manager living in Centurion, South Africa.
-                </Card.Text>
-                <Card.Text>
-                    Privilege graduate from the University of Pretoria, where he studied Electronic Engineering. During his scholarship vacation work, he was indentified by a Principal Developer with great potential. Under his wing, he learned the tools of the trade of Engineering, not as an occupation, but a tool to change the world.
-                </Card.Text>
-                <Button variant="primary">Download Resume</Button>
-
-                {/* <Card.Link href="#">Card Link</Card.Link> */}
+                <Card.Title style={{ height: '5rem' }}>About Me</Card.Title>
+                <Timeline align="alternate">
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent> Born 18 November 1994 in Klerksdorp, South Africa</TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>Graduated from a Technical High School at 2012</TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            Joined University of Pretoria to study Electronic Engineering 2013<br />
+                            Member of Golden Key International Society 2015<br />
+                            Member of University of Pretoria residence governing body in 2015<br />
+                            3rd Place in Microcontrollers line following robot competition 2016
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            Worked as a developer intern part time during my studies at Nanoteq 2015 - 2017<br />
+                            Graduated with a bachelors in Electronic Engineering from University of Pretoria in 2017<br />
+                            Joined Nanoteq, South Africa’s leader in cryptographic technology as a hardware developer in 2018
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            Joined Nanoteq, South Africa’s leader in cryptographic technology as a hardware developer in 2018<br />
+                            Worked on freelance projects for Bosch (vehicle tracking system and 2Wheel Power controller) 2018 – 2020
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            Acting Junior Project Manager for a production of a flagship product ordered by Armscor in 2021<br />
+                            Studied Project Management at University of Stellenbosch Business School 2021<br />
+                            Certified Scrum Product Owner (CSPO) with Scrum Alliance 2021
+                        </TimelineContent>
+                    </TimelineItem>
+                </Timeline>
+                <Button variant="primary">Download Resume</Button>{' '}
+                <Button variant="primary">Download Portfolio</Button>
             </Card.Body>
         </Card>
 
@@ -55,3 +84,20 @@ const About = () => {
 }
 
 export default About;
+
+/* <Card.Text>
+                    Born 18 November 1994 in Klerksdorp, South Africa
+                    I speak English, Portuguese and Afrikaans
+                    Graduated from a technical high school at 2012
+                    Joined University of Pretoria to study Electronic Engineering 2013
+                    Member of Golden Key International Society 2015
+                    Member of University of Pretoria residence governing body in 2015
+                    3rd Place in Microcontrollers line following robot competition 2016
+                    Worked as a developer intern part time during my studies at Nanoteq 2015 - 2017
+                    Graduated with a bachelors in Electronic Engineering from University of Pretoria in 2017
+                    Joined Nanoteq , South Africa’s leader in cryptographic technology as a hardware developer in 2018
+                    Worked on freelance projects for Bosch \(vehicle tracking system and 2Wheel Power controller\) 2018 – 2020
+                    Acting Junior Project Manager for a production of a flagship product ordered by Armscor in 2021
+                    Studied Project Management at University of Stellenbosch Business School 2021
+                    Certified Scrum Product Owner \(CSPO\) with Scrum Alliance 2021
+                </Card.Text> */

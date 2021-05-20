@@ -1,16 +1,21 @@
 .hero {
 	/* background-color: #343a40; */
-	background-image: linear-gradient(rgba(139, 121, 121, 0.726), rgba(57, 44, 240, 0.5)),
+	background-image: linear-gradient(
+			rgba(139, 121, 121, 0.726),
+			rgba(57, 44, 240, 0.5)
+		),
 		url("./../../assets/background.jpg");
-	
+
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	align-items: center;
-	height: 500px;
 
+	align-items: center;
+	text-align: center;
+	min-height: 500px;
+	margin-bottom: 0px;
 }
 
 .hero_text {
@@ -18,4 +23,3 @@
 	text-align: center;
 	color: white;
 }
-

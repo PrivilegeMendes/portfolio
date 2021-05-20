@@ -7,6 +7,9 @@ import 'tachyons';
 import 'react-reveal';
 import 'react-router-dom';
 import 'react-bootstrap';
+import '@material-ui/core';
+import '@material-ui/icons';
+// import '@material-ui/lab';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
